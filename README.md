@@ -1,2 +1,3 @@
 # Software_Agency
-Implemented the home page for the website of a software agency; designed by me previously.
+Testing my html and css proficiency. Implemented the home page for the website of a software agency; designed by me previously.
+Work in progress
