@@ -29,6 +29,8 @@ h1{
     display: flex;
     flex-flow: column;
     background-image: url(unsplash.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -295,7 +297,7 @@ hr{
 
 .footer{
     text-align: center;
-    padding: 32px 0;
+    padding: 2em 0;
 }
 
 /* mobile responsive media query */
@@ -306,7 +308,9 @@ hr{
     }
 
     .first-scroll{
-        height: 60vh;
+        height: 70%;
+        background-image: url(unsplash_small.png);
+        background-size: cover;
     }
 
     .main-nav-parent{
@@ -327,12 +331,18 @@ hr{
     }
 
     .home{
-        margin-top: 80px;
+        margin-top: 88px;
         padding: 0 16px;
     }
     .home-header{
         font-size: 32px;
     }
+
+    .message{
+        right: 1em;
+        bottom: 1em;
+    }
+
     .second-scroll{
         width: 100%;
         flex-flow: column;
@@ -351,7 +361,7 @@ hr{
         display: flex;
         flex-flow: column;
         flex-wrap: wrap;
-        padding: 24px;
+        padding: 0 24px;
     }
     .offer{
         width: 100%;
@@ -364,5 +374,43 @@ hr{
 
     .offer p{
         width: 100%;
+    }
+    .third-scroll{
+        width: 100vw;
+        flex-flow: column;
+        flex-wrap: wrap;
+        margin-top: 56px;
+        text-align: center;
+        padding: 0 24px;
+    }
+    .we__are{
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    
+    .company-description p{
+        width: 100%;
+        line-height: 1.2em;
+    }
+
+    .features{
+        margin-top: 56px;
+    }
+
+    .feature p{
+        position: static;
+        display: block;
+        margin-top: 24px;
+    }
+
+    .last-scroll{
+        padding: 1.5em 0;
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+    }
+
+    .contact, .faqs{
+        margin-top: 2em;
     }
 }
