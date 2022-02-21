@@ -10,6 +10,7 @@
     -ms-overflow-style: none; /* scrolling for Internet Explorer, Edge */
     scrollbar-width: none; /* scrolling for Firefox */
     overflow-y: scroll; 
+    width: 100vw;
 }
   
 body::-webkit-scrollbar {
@@ -28,7 +29,7 @@ h1{
     display: flex;
     flex-flow: column;
     background-image: url(unsplash.png);
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
@@ -45,7 +46,7 @@ h1{
 
 hr{
     margin-top: 32px;
-    width: 1312px;
+    width: 94%;
     align-self: center;
     opacity: 0.4;
 }
@@ -123,6 +124,7 @@ hr{
 }
 
 .home-header{
+    font-size: 2.5rem;
     font-weight: bold;
     letter-spacing: 1px;
 }
@@ -294,4 +296,73 @@ hr{
 .footer{
     text-align: center;
     padding: 32px 0;
+}
+
+/* mobile responsive media query */
+
+@media (max-width: 640px) {
+    body{
+        font-size: 16px;
+    }
+
+    .first-scroll{
+        height: 60vh;
+    }
+
+    .main-nav-parent{
+        display: none;
+    }
+    .header-title{
+        flex-basis: 50%;
+    }
+    .header-title h1{
+        font-size: 16px;
+    }
+    .login{
+        display: none;
+    }
+
+    hr{
+        width: 94%;
+    }
+
+    .home{
+        margin-top: 80px;
+        padding: 0 16px;
+    }
+    .home-header{
+        font-size: 32px;
+    }
+    .second-scroll{
+        width: 100%;
+        flex-flow: column;
+        flex-wrap: wrap;
+        margin-top: 56px;
+        text-align: center;
+    }
+
+    .offer-message{
+        padding: 0 24px;
+        width: 100%;
+    }
+
+    .offers{
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        flex-wrap: wrap;
+        padding: 24px;
+    }
+    .offer{
+        width: 100%;
+        margin-top: 48px;
+    }
+
+    .offer-lower{
+        padding-top: 0;
+    }
+
+    .offer p{
+        width: 100%;
+    }
 }
