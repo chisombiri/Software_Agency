@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="Pp.png">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/0cc36498dc.js"></script>
 </head>
 <body>
     <main class="first-scroll">
@@ -52,7 +53,7 @@
                 <p>business goals through digital marketing</p>
             </div>
             <div class="book">
-                <a href="#" class="button-text">Book a service</a>
+                <a href="#" class="button-text" id="book">Book a service</a>
             </div>
         </div>
         <a href="#" class="message">
@@ -322,5 +323,42 @@
     <footer class="footer">
         <p>© 2021 - All rights Reserved. Biri CONSULTANCY SERVICES</p>
     </footer>
+
+    <!-- MODAL -->
+    <div class="modal-container" id="modal">
+        <div class="modal">
+          <button class="close-btn" id="close">
+            <i class="fa fa-times"></i>
+          </button>
+          <div class="modal-header">
+            <h3>Sign Up</h3>
+          </div>
+          <div class="modal-content">
+            <p>Get started with us to get offers, support and more</p>
+            <form class="modal-form">
+              <div>
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Enter Name"
+                  class="form-input"
+                />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter Email"
+                  class="form-input"
+                />
+              </div>
+              <input type="submit" value="Submit" class="submit-btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
 </body>
 </html>

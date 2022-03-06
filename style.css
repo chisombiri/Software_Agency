@@ -300,6 +300,96 @@ hr{
     padding: 2em 0;
 }
 
+/* MODAL STYLING */
+.modal-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .modal-container.show-modal {
+    display: block;
+  }
+  
+  .modal {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.3);
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 24rem;
+    animation-name: modalopen;
+    animation-duration: 1.6s;
+  }
+  
+  .modal-header {
+    background: #00D899;
+    color: #ffffff;
+    padding: 1em;
+  }
+  
+  .modal-header h3 {
+    margin: 0;
+    padding-bottom: 0.2em;
+    border-bottom: 1px solid #333;
+  }
+  
+  .modal-content {
+    padding: 1.2em;
+  }
+  
+  .modal-form div {
+    margin: 1em 0;
+  }
+  
+  .modal-form label {
+    display: block;
+    margin-bottom: 0.4em;
+  }
+  
+  .modal-form .form-input {
+    padding: 0.5em;
+    width: 100%;
+  }
+  
+  .close-btn {
+    background: transparent;
+    font-size: 1.2em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+
+  .submit-btn{
+    padding: 0;
+    border: none;
+    background: none;
+    background-color: #00D899;
+    color: #ffffff;
+    padding: 0.5em 2.5em;
+    border-radius: 1em;
+    cursor: pointer;
+  }
+  
+  @keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }  
+
 /* mobile responsive media query */
 
 @media (max-width: 640px) {
